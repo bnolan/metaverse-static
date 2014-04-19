@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Metaverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+      @import url(style.css);
+    </style>
+  </head>
+  <body>
+
+    <div id="title-card">
+      <a href="/" class="logo">M</a>
+     
+      <!--h1>metaverse.sh</h1-->
+
+      <img src="state-of-the-metaverse.gif" class="state" />
+      <p>
+        <a href="http://www.bennolan.com/">Blog</a> |
+        <a href="http://www.twitter.com/bnolan/">Twitter</a> |
+        <a href="http://github.com/bnolan/mv-server/">Github</a>
+      </p>
+    </div>
+
+    <div id="content">
+      <h3>
+        Goals
+      </h3>
+      
+      <p>
+        The goal of this project is to create a multiuser 3d world for sharing
+        art and experiences with other people.
+      </p>
+
+      <h3>
+        Try it now
+      </h3>
+
+      <form class="auth" action="#">
+        <div class="f">
+          <label>Username</label>
+          <input />
+        </div>
+
+        <div class="f">
+          <label>Password</label>
+          <input />
+        </div>
+
+        <div class="f">
+          <button>Login</button>
+        </div>
+
+
+      <p>
+        Create a user name to join the world and explore other peoples art. If
+        you want to upload your own art into the world, read our <a href="#">art importers
+        guide</a>.
+      </p>
+
+      <h2>
+        Components
+      </h2>
+
+      <h3>
+        Asset server <small> - <a href="//asset.metaverse.sh">server</a></small>
+      </h3>
+
+      <p>
+        The asset server accepts many kinds of 3d models for upload, and processes them so
+        they can be loaded by the client javascript. Currently supported models are:
+      </p>
+
+      <code>
+        .3ds, .dae, .blender, .obj
+      </code>
+
+      <p>
+        The asset server currently outputs three.js comopatible <code>.js</code> models. The
+        asset server uses CORS so that any client can drag and drop models into the world.
+      </p>
+
+      <h3>
+        Scene Server <small> - <a href="//github.com/bnolan/scene-server">github</a></small>
+      </h3>
+
+      <p>
+        The scene server is a node.js app that simulates the world, runs javascript code
+        to modify the world state, and shares the world state with everyone who is connected.
+        The scene server is designed to be cross platform and run on Windows and Mac.
+      </p>
+
+      <h3>
+        Scene Protocol
+      </h3>
+
+      <p>
+        The
+
+    </div>
+
+  </body>
+</html>
