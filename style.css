@@ -75,3 +75,6 @@ div#content {
   width: 240px; }
   .state a {
     color: inherit; }
+
+form.auth {
+  border: 1px solid #ccc; }
